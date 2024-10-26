@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    height: auto;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #FFFAFA;
+    overflow-x: hidden;
+    transform: tra;
+}
+
+.services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.30)), url(https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQxNDUyfQ&w=1920);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-process {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.30)), url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gihsg13plfsb8xfbzmlf/image-027);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shadow-container {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.bg-work-with-us {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.50)), url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/skkve0aqzhkkyiytn92d/work-with-us);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+input:focus {
+    outline: none;
+    border: none;
+}

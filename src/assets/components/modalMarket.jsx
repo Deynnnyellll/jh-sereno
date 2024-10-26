@@ -1,0 +1,21 @@
+import { Context } from "../context/context";
+import { useContext } from "react";
+
+function ModalMarket({ title, image ,details }) {
+    const { setModal } = useContext(Context)
+
+  return (
+    <div className="absolute bg-black bg-opacity-80 w-screen h-screen md:h-[120vh] mt-[-20%] md:mt-[-12%]">
+        <div className="absolute w-[60vw] md:w-[35vw] h-[75vh] md:h-[65vh] outline outline-2 shadow-xl outline-slate-400 bg-slate-100 shadow-container flex items-center justify-center rounded-2xl top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <button className="text-4xl absolute font-karla top-10 right-10 text-black" onClick={() => setModal(prevState => !prevState)}> X </button>
+        <div className="px-6 font-karla flex flex-col items-center justify-center">
+            <img src={image} alt="" className="w-[40%] md:w-[20%] mb-4"/>
+            <h1 className="text-2xl md:text-3xl mb-5 font-semibold"> {title} </h1>
+            <p className="text-md p-4 md:p-0 md:text-lg text-center"> {details} </p>
+        </div>
+    </div>
+    </div>
+  )
+}
+
+export default ModalMarket
