@@ -31,7 +31,7 @@ function Carousel({ current }) {
                     </div>
                     <img 
                         src={item.image}
-                        alt="" className="relative z-0 w-full mt-[-10%] h-full md:h-auto"/>
+                        alt="" className="relative z-0 w-full mt-[-14%] md:mt-[-10%] h-full md:h-auto"/>
                 </div>
             ))
         }
