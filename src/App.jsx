@@ -38,7 +38,7 @@ useEffect(() => {
 
   return (
     <Context.Provider value={{modal, setModal, show}}>
-      <div className="font-playFair text-white">
+      <div className="font-playFair text-white overflow-x-hidden">
         <Hero />
         <SearchBar />
         <MarketingPlan />
