@@ -30,7 +30,7 @@ function Footer() {
             <h1 className="text-2xl md:text-3xl"> Newsletter </h1>
             <p className="w-[90%] md:w-[37%] text-justify text-md md:text-lg font-karla mt-4"> Subscribe to our Newsletter for latest news and updates. Stay tuned! </p>
 
-            <input type="text" placeholder="Email Address" className="mt-6 md:mt-10 font-karla text-md px-2"/>
+            <input type="text" placeholder="Email Address" className="mt-6 md:mt-10 font-karla text-md px-2 bg-opacity-0"/>
             <div className="w-full md:w-[85%] h-[0.5px] bg-black"></div>
             <div className="flex items-start py-4 gap-4">
                 <input type="checkbox" id="check" className="mt-1"/>
