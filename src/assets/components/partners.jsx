@@ -10,7 +10,7 @@ function Partners() {
                 <h1 className='text-5xl font-bold text-center'> Our Partners </h1>
                 <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/og3ockhby4gghmrdfseo/edited-p-19" alt="" className="w-[75%] mt-12 mb-8 md:hidden"/>  
                 <h2 className='font-karla text-lg mt-4 font-thin text-center'> Leading Real Estate Companies of The World® & Luxury Portfolio International </h2>
-                <div className={`w-[40%] flex items-center justify-center mt-8 gap-10 mb-10 ${inView ? "translate-x-0 opacity-100" : "md:translate-x-[-150%] md:opacity-0"} duration-700 ease-in-out`}>
+                <div className={`w-[40%] flex items-center justify-center mt-8 gap-4 md:gap-10 mb-10 ${inView ? "translate-x-0 opacity-100" : "md:translate-x-[-150%] md:opacity-0"} duration-700 ease-in-out`}>
                     {
                         partners.map((item, index) => (
                             index !== 1 &&
