@@ -19,7 +19,7 @@ function Showcase() {
     }
 
   return (
-    <div className="w-full p-20 md:p-24 bg-black text-white">
+    <div className="w-full p-8 md:p-24 bg-black text-white">
         {
             realEstate.map((item, index) => (
                 <div key={index} className={`flex items-center flex-col md:flex-row justify-center ${index % 2 === 0 && 'md:flex-row-reverse'} gap-24 md:gap-36 mt-20`}>

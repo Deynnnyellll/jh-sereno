@@ -15,7 +15,7 @@ function Process() {
                     {
                         sell.map((item, index) => (
                             <li key={index} 
-                                className={`text-2xl rounded-full ${index === sellingProcess ? 'bg-black text-white scale-105' : 'text-black'} transition ease-in-out duration-300 py-4 px-10 w-full flex items-center justify-start gap-6 outline outline-1 outline-black`}
+                                className={`text-lg md:text-2x; rounded-full ${index === sellingProcess ? 'bg-black text-white scale-105' : 'text-black'} transition ease-in-out duration-300 py-2 md:py-4 px-4 md:px-10 w-full flex items-center justify-start gap-6 outline outline-1 outline-black`}
                                 onMouseEnter={() => setSellingProcess(index)} onMouseLeave={() => setSellingProcess()}
                             >
                                 <p className="text-3xl mb-2 font-bold"> {index+1} </p>
@@ -34,7 +34,7 @@ function Process() {
                     {
                         buy.map((item, index) => (
                             <li key={index} 
-                                className={`text-2xl rounded-full ${index === buyingProcess ? 'bg-black text-white scale-105' : 'text-black'} transition ease-in-out duration-300 py-4 px-10 w-full flex items-center justify-start gap-6 outline outline-1 outline-black`}
+                                className={`text-lg md:text-2xl rounded-full ${index === buyingProcess ? 'bg-black text-white scale-105' : 'text-black'} transition ease-in-out duration-300 py-2 md:py-4 px-4 md:px-10 w-full flex items-center justify-start gap-6 outline outline-1 outline-black`}
                                 onMouseEnter={() => setBuyingProcess(index)} onMouseLeave={() => setBuyingProcess()}
                             >
                                 <p className="text-3xl mb-2 font-bold"> {index+1} </p>

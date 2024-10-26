@@ -5,9 +5,9 @@ function Partners() {
     const [ref, inView] = useInView({threshold: 0.5});
   return (
     <div className='mt-24 mb-0 md:mb-24 w-full flex flex-col'>
-        <div className='mt-24 w-full p-24 bg-black text-white flex flex-col md:flex-row items-center gap-24' ref={ref}>
+        <div className='mt-24 w-full py-24 px-8 md:p-24 bg-black text-white flex flex-col md:flex-row items-center gap-24' ref={ref}>
             <div className="flex flex-col items-center justify-center w-[100%]">
-                <h1 className='text-5xl font-bold'> Our Partners </h1>
+                <h1 className='text-5xl font-bold text-center'> Our Partners </h1>
                 <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/og3ockhby4gghmrdfseo/edited-p-19" alt="" className="w-[75%] mt-12 mb-8 md:hidden"/>  
                 <h2 className='font-karla text-lg mt-4 font-thin text-center'> Leading Real Estate Companies of The World® & Luxury Portfolio International </h2>
                 <div className={`w-[40%] flex items-center justify-center mt-8 gap-10 mb-10 ${inView ? "translate-x-0 opacity-100" : "md:translate-x-[-150%] md:opacity-0"} duration-700 ease-in-out`}>
@@ -15,7 +15,7 @@ function Partners() {
                         partners.map((item, index) => (
                             index !== 1 &&
                             <div key={index} className="bg-white p-12 rounded-md shadow-lg shadow-slate-800 hover:translate-y-[-2%] duration-300 ease-in-out flex-shrink-0"> 
-                                <img src={item} alt={item} className="w-[100px] h-[100px]"/>
+                                <img src={item} alt={item} className="w-[50px] md:w-[100px] h-[50px] md:h-[100px]"/>
                             </div>
                         ))
                     }
@@ -27,14 +27,14 @@ function Partners() {
             <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/og3ockhby4gghmrdfseo/edited-p-19" alt="" className="hidden md:block w-[55%]"/>  
         </div>
 
-        <div className="w-full px-28 gap-10 flex flex-col md:flex-row items-center justify-center text-black font-karla mt-24 mb-24">
+        <div className="w-full px-10 md:px-28 gap-10 flex flex-col md:flex-row items-center justify-center text-black font-karla mt-24 mb-24">
             <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ebvif7iqcx0lcjlvwyuz/edited-page-20" alt="" className="w-[70%] md:w-[50%]"/>
             <div className="flex flex-col justify-center gap-10">
                 <p className="text-justify"> Through our international affiliations, we have a strong presence in over 50 countries. Our luxury listings are sent to prominent international real estate sites, reaching over 70 million potential buyers and investors worldwide through our relationships with: </p>
                 <div className="w-full flex items-center justify-center gap-10 mt-4 md:mt-10">
                     {
                         partners.map((item, index) => (
-                            <img key={index} src={item} alt={item} className="w-[150px] h-[100px]"/>
+                            <img key={index} src={item} alt={item} className="w-[50px] md:w-[150px] h-[50px] md:h-[100px]"/>
                         ))
                     }
                 </div>

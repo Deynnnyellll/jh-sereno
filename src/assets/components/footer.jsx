@@ -2,8 +2,8 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="mt-8 mb-8 w-full p-8 md:p-16 flex items-start justify-center text-black">
-        <div className="w-[50%]">
+    <footer className="mt-8 mb-8 w-full p-4 md:p-16 flex flex-col md:flex-row items-start justify-center text-black">
+        <div className="w-full md:w-[50%]">
             <h1 className="text-2xl md:text-3xl"> Julie Hansen Partnership </h1>
             <p className="text-md md:text-lg w-full text-justify font-karla mt-4"> An elite group of the East Bay’s most talented and visionary real estate professionals believed buyers and sellers deserved more from their real estate company. More service. More resources. More integrity. More global reach. In a word, more of everything people should expect when they buy or sell their homes. </p>
             <div className="flex flex-col md:flex-row items-center justify-center md:mt-10">
@@ -23,9 +23,10 @@ function Footer() {
                 <FaFacebookF className="bg-black text-white rounded-full text-4xl p-3"/>
                 <FaLinkedinIn className="bg-black text-white rounded-full text-4xl p-3"/>
             </div>
-            <h1 className="text-md md:text-xl font-karla mt-10 md:mt-14"> Website Designed & Developed by <b> Luxury Presence </b>   </h1>
+            <h1 className="text-md md:text-xl font-karla mt-10 md:mt-14 text-center md:text-left"> Website Designed & Developed by <b><br className="block md:hidden"/> Luxury Presence </b>   </h1>
         </div>
-        <div className="w-[50%] ml-28">
+        <div className="mt-10 w-full h-[3px] bg-black md:hidden"></div>
+        <div className="w-full md:w-[50%] md:ml-28 mt-10 md:mt-0">
             <h1 className="text-2xl md:text-3xl"> Newsletter </h1>
             <p className="w-[90%] md:w-[37%] text-justify text-md md:text-lg font-karla mt-4"> Subscribe to our Newsletter for latest news and updates. Stay tuned! </p>
 
@@ -41,7 +42,7 @@ function Footer() {
                 <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/siun2nwoji9w7v0mssvy/dark-equal-logo_gahxpa" alt="" className="w-[8%]"/>
                 <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qje0mcix0r0qeoiikumu/sereno-logo" alt="" className="w-[8%]"/>
             </div>
-            <h1 className="text-md md:text-xl font-karla mt-12"> Copyright 2024 | Privacy Policy </h1>
+            <h1 className="text-md md:text-xl font-karla mt-12 text-center md:text-left"> Copyright 2024 | Privacy Policy </h1>
         </div>
     </footer>
   )
